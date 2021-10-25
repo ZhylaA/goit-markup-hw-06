@@ -439,7 +439,9 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="btn" type="submit">Подписаться</button>
+            <button class="btn" type="submit">Подписаться
+              <svg class="footer-ok" width="18" height="18"><use href="./images/sprite.svg#icon-send"></use>
+          </svg></button>
           </form>
         </div>
       </div>
@@ -455,38 +457,50 @@
         <form action="#">
           <label class="modal-label" for=""></label>
             Имя
-            <input
+            <span class="modal-wrapper"><input
               class="modal-input"
               type="text"
               name="name"
-              placeholder="svg"
-          /></label>
+              placeholder=" "
+          /><svg class="modal-svg" width="18" height="18"><use href="./images/sprite.svg#icon-person"></use>
+          </svg></span>
+                    </label>
           <label class="modal-label" for="">
             Телефон
-            <input class="modal-input" type="tel" name="tel" placeholder="svg"
-          /></label>
+            <span class="modal-wrapper">
+            <input class="modal-input" type="tel" name="tel" placeholder=" "
+          /><svg class="modal-svg" width="18" height="18"><use href="./images/sprite.svg#icon-phone"></use>
+          </svg></span></label>
           <label class="modal-label" for="">
             Почта
+            <span class="modal-wrapper">
             <input
               class="modal-input"
               type="email"
               name="email"
-              placeholder="svg"
-          /></label>
+              placeholder=" "
+          /><svg class="modal-svg" width="18" height="18"><use href="./images/sprite.svg#icon-email"></use>
+          </svg></span></label>
           <label class="modal-label" for="">
             Комментарий
+            <span class="modal-wrapper">
             <textarea
               class="modal-textarea"
               name=""
               rows="10"
               placeholder="Введите текст"
-            ></textarea>
+            ></textarea></span>
           </label>
-          <label for="" >
-            <input type="checkbox" name="deal" id="">
-          </label>
-          <b class="modal-deal">Соглашаюсь с рассылкой и принимаю Условия договора</b>
-          <button type="submit" class="btn modal-btn">Отправить</button>
+          <input class="checkbox visually-hidden" type="checkbox" name="deal" id="check-deal">
+          <label for="check-deal" class="check-deal">
+            <span><svg class="modal-check" width="11" height="8">
+              <use href="./images/sprite.svg#icon-check"></use>
+          </svg>
+        </span> Соглашаюсь с рассылкой и принимаю 
+            <a href="" class="deal">Условия договора</a></label>
+          
+          <button type="submit" class="btn modal-btn">
+            Отправить</button>
         </form>
       </div>
     </div>
