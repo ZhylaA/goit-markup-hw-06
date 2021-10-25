@@ -763,6 +763,9 @@ body {
   padding-left: 15px;
   color: var(--white-color);
 }
+.footer-ok {
+  margin-left: 10px;
+}
 .form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
