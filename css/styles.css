@@ -221,13 +221,15 @@ body {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--blue-color);
+  border: none;
 }
 
 .btn {
   transition: color var(--time-duration) var(--cubic-bezier),
     background-color var(--time-duration) var(--cubic-bezier);
 }
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: var(--blue-color);
   background-color: var(--white-color);
 }
@@ -423,7 +425,8 @@ body {
 .clients-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--color-soc);
+
   box-sizing: border-box;
   border-radius: 4px;
   display: flex;
@@ -676,7 +679,7 @@ body {
 }
 .modal-label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: 4px;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -692,7 +695,8 @@ body {
 }
 .modal-textarea {
   padding: 12px 16px;
-  height: 96px;
+  height: 120px;
+  resize: none;
 }
 
 .modal-input {
@@ -720,6 +724,7 @@ body {
 .modal-wrapper {
   display: block;
   position: relative;
+  margin-top: 4px;
 }
 .modal-svg {
   position: absolute;
@@ -777,12 +782,20 @@ body {
   line-height: calc(24 / 14);
   color: var(--secondary-color);
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-right: 7px;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-check {
+  margin-right: 7px;
 }
 .deal {
   color: var(--blue-color);
 }
+
 .check-deal span {
   width: 16px;
   height: 16px;
