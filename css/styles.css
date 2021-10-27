@@ -679,7 +679,7 @@ body {
 }
 .modal-label {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 4px;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -746,8 +746,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-.form {
-  margin-left: 93px;
+.icon-close:focus,
+.icon-close:hover {
+  fill: var(--blue-color);
 }
 
 .form-title {
